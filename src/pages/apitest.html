@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <main>
+      <h3>console.log harjoitukset</h3>
+
+      <p>
+        Hae kaikki items tiedot omasta backendistä ja printtaa tulos konsoliin
+      </p>
+
+      <pre>GET http://localhost:3000/api/items </pre>
+      <button class="get_items">Get all items</button>
+
+      <h3>Esimerkkitaulukko, staattinen</h3>
+
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Info</th>
+            <th>Delete</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dom</td>
+            <td>dom@google.com</td>
+            <td><button class="check">Info</button></td>
+            <td><button class="del">Delete</button></td>
+            <td>1</td>
+          </tr>
+          <!--  <tr class="active-row"> -->
+          <tr>
+            <td>Melissa</td>
+            <td>melissa@google.com</td>
+            <td><button class="check">Info</button></td>
+            <td><button class="del">Delete</button></td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Haetaan nappia painamalla kaikki käyttäjät</h3>
+
+      <pre>GET http://localhost:3000/api/users</pre>
+
+      <button class="get_users">Get all users</button>
+
+      <div class="forms">
+        <div style="flex: 1">
+          <h3>GET</h3>
+
+          <p>
+            Hae käyttäjän tiedot painamalla alla olevaa nappia. Tämä hakee
+            tiedot sekä luo taulukon tbody osan. Jokaiselle riville luodaan
+            nappulat. Info hakee yksittäisen rivin tiedot ja avaa alert-popupin.
+            Delete poistaa yksittäisen rivin ja varmistaa tapahtuman confirm()
+            kun reitti on valmiina. metodilla. Info on kotitehtävä ja Delete
+            toiminto lisätään myöhemmin
+          </p>
+
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Info</th>
+                <th>Delete</th>
+                <th>ID</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              <!-- tänne haetaan kaikki käyttäjät -->
+              <!-- # Get all users -->
+              <!-- GET http://127.0.0.1:3000/api/users -->
+            </tbody>
+          </table>
+        </div>
+        <div style="flex: 1">
+          <h3>POST</h3>
+
+          <p>
+            Lisää käyttäjiä formin avulla. Formi lisää uuden käyttäjän
+            nappulasta 'Add User'.
+          </p>
+
+          <!-- https://www.w3schools.com/css/css_form.asp -->
+          <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_form_padding -->
+
+          <pre style="overflow: auto">
+  POST http://localhost:3000/api/users
+  content-type: application/json
+
+  {
+    "username": "Uusi käyttäjä",
+    "password": "salakala",
+    "email": "newuser@example.com"
+  }</pre
+          >
+
+          <form class="addform">
+            <label for="username">Username</label>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              placeholder="Uusi käyttäjä"
+            />
+            <label for="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="salakala"
+            />
+            <label for="password">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="newuser@example.com"
+            />
+            <input
+              name="submit"
+              type="submit"
+              value="Add User"
+              class="formpost"
+            />
+          </form>
+        </div>
+      </div>
+
+      <!-- The actual snackbar -->
+      <div id="snackbar">Some text some message..</div>
+    </main>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
