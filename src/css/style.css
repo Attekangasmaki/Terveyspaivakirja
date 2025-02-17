@@ -170,6 +170,53 @@ input[type=text], input[type=password], input[type=email] {
 pre {
   background-color: var(--blue);
 }
+.card-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+
+.card-img {
+  flex: 1;
+  max-width: 150px;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-diary {
+  flex: 2;
+  padding: 15px;
+}
+
+.card-diary h4 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card-diary p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
 
 @media screen and (max-width: 800px) {
   .forms {

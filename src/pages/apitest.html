@@ -142,6 +142,32 @@
 
       <!-- The actual snackbar -->
       <div id="snackbar">Some text some message..</div>
+      <dialog class="info_dialog">
+        <p>
+          <div>User ID: <span id="dialog-user-id">Id</span></div>
+          <div>User Name: <span id="dialog-username">Username</span></div>
+          <div>Email: <span id="dialog-email">Email</span></div>
+          <div>Role: <span id="dialog-role">Role</span></div>
+        </p>
+        <button autofocus>Close</button>
+      </dialog>
+      <h3>Flexboxilla tehdyt kortit - Runko</h3>
+      <!-- kortit sisältävä flex parent -->
+      <section class="card-area">
+        <!-- yksittäinen kortti -->
+        <div class="card">
+          <!-- vasen puoli jossa kuva -->
+          <div class="card-img">
+            <img src="/img/diary.jpg" alt="kuva" />
+          </div>
+      
+          <!-- oikea puoli jossa päiväkirjamerkintä-->
+          <div class="card-diary">
+            <!-- tänne myös flexbox rakenne -->
+            Tänne dataa
+          </div>
+        </div>
+      </section>      
     </main>
 
     <script type="module" src="/src/js/main.js"></script>
