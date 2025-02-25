@@ -17,7 +17,7 @@ import { fetchData } from "./fetch";
 
 
 const getUsers = async () => {
-    const url = 'http://localhost:3000/api/users';
+    const url = 'http://localhost:5000/api/users';
     const users = await fetchData(url);
 
     if (users.error) {
@@ -57,7 +57,7 @@ const addButtonEventListeners = () => {
 
 const fetchUserInfo = async (userId) => {
     try {
-        const response = await fetch(`http://localhost:3000/api/users/${userId}`);
+        const response = await fetch(`http://localhost:5000/api/users/${userId}`);
         const user = await response.json();
         alert(`User Info:\nID: ${user.user_id}\nName: ${user.username}\nEmail: ${user.email}`);
     } catch (error) {
@@ -82,7 +82,7 @@ const addUser = async (event) => { // Lisää event-parametri
 
     const bodyData = { username, password, email };
 
-    const url = 'http://localhost:3000/api/users';
+    const url = 'http://localhost:5000/api/users';
     const options = {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
@@ -121,7 +121,7 @@ closeButton.addEventListener('click', () => {
 // Funktio yksittäisen käyttäjän hakemiseen ID:n perusteella
 const getUserById = async (userId) => {
   try {
-    const response = await fetch(`http://localhost:3000/api/users/${userId}`);
+    const response = await fetch(`http://localhost:5000/api/users/${userId}`);
     if (!response.ok) {
       throw new Error('Käyttäjän tietojen haku epäonnistui');
     }
@@ -160,7 +160,7 @@ const addEventListeners = () => {
 };
 const getUserDiaries = async (userId) => {
     try {
-        const response = await fetch(`http://localhost:3000/api/entries/${userId}`);
+        const response = await fetch(`http://localhost:5000/api/entries/${userId}`);
         if (!response.ok) {
             throw new Error('Päiväkirjamerkintöjen haku epäonnistui');
         }
@@ -173,7 +173,7 @@ const getUserDiaries = async (userId) => {
 
 const loadDiaryEntries = async (userId) => {
     try {
-        const response = await fetch(`http://localhost:3000/api/entries/${userId}`);
+        const response = await fetch(`http://localhost:5000/api/entries/${userId}`);
         let diaries = await response.json();
 
         console.log("Haetut merkinnät:", diaries); // Debuggausta varten

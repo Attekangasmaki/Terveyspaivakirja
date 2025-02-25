@@ -8,7 +8,9 @@ export default defineConfig({
       input: {
         // List your html files here, e.g:
         main: resolve(__dirname, 'index.html'),
-        api: resolve(__dirname, 'pages/apitest.html'),
+        about: resolve(__dirname, 'about.html'),
+        api: resolve(__dirname, 'src/pages/apitest.html'),
+        auth: resolve(__dirname, 'src/pages/authtest.html'),
       },
     },
   },

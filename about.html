@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </nav>
+    <h2>About sivu</h2>
+    <div>
+      Tämä on sivuston rakenteen toinen sivu, tässä esimerkki viten poluista
+    </div>
+    <!-- staattisten kuvien viittaaminen public kansiosta-->
+    <h4>Staattinen kuva</h4>
+    <img src="/img/diary.jpg" width="300" />
+    <!-- tähän haetaan css taustakuva, tsekkaa css tiedostosta oikea polku-->
+    <h4>Taustakuva</h4>
+    <div id="bgimage"></div>
+    <script type="module" src="/src/js/about.js"></script>
+  </body>
+</html>
