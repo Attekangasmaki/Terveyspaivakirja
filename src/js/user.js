@@ -16,6 +16,19 @@ import { fetchData } from "./fetch";
 } */
 
 
+/////////////////////
+// Snackbar
+const snackbar = document.getElementById('snackbar');
+
+const showSnackbar = (message, type = '') => {
+    snackbar.innerText = message;
+    snackbar.className = `show ${type}`.trim(); // Add optional type class (e.g., 'error')
+
+    setTimeout(() => {
+    snackbar.className = snackbar.className.replace('show', '').trim();
+    }, 3000);
+};
+
 const getUsers = async () => {
     const url = 'http://localhost:5000/api/users';
     const users = await fetchData(url);

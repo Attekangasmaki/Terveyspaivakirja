@@ -55,56 +55,58 @@ const registerUser = async (event) => {
 };
 
 const loginUser = async (event) => {
-    event.preventDefault();
-  
-    // Haetaan oikea formi
-    const loginForm = document.querySelector('.loginForm');
-  
-    // haetaan formista arvot tällä kertaa 
-    const username = loginForm.querySelector('input[name=username]').value;
-    const password = loginForm.querySelector('input[name=password]').value;
-  
-    // Luodaan body lähetystä varten taustapalvelun vaatimaan muotoon
-    const bodyData = {
-      username: username,
-      password: password,
-    };
-  
-    // Endpoint
-    const url = 'http://localhost:5000/api/auth/login';
-  
-    // Options
-    const options = {
-      body: JSON.stringify(bodyData),
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
-    };
-    console.log(options);
-  
-    // Hae data
-    const response = await fetchData(url, options);
-  
-    if (response.error) {
-      console.error('Error loginning in:', response.error);
-      return;
-    }
-  
-    if (response.token) {
-      console.log('Kirjautuminen onnistui! Token:', response.token);
-      localStorage.setItem('token', response.token); // Tallennetaan token localStorageen
-    } else {
-      console.error('Virhe: Tokenia ei palautettu.');
-    }
-  
-    if (response.message) {
-      console.log(response.message, 'success');
-    }
-  
-    console.log(response);
-    loginForm.reset(); // tyhjennetään formi
+  event.preventDefault();
+
+  // Haetaan oikea formi
+  const loginForm = document.querySelector('.loginForm');
+
+  // haetaan formista arvot tällä kertaa 
+  const username = loginForm.querySelector('input[name=username]').value;
+  const password = loginForm.querySelector('input[name=password]').value;
+
+  // Luodaan body lähetystä varten taustapalvelun vaatimaan muotoon
+  const bodyData = {
+    username: username,
+    password: password,
   };
+
+  // Endpoint
+  const url = 'http://localhost:5000/api/auth/login';
+
+  // Options
+  const options = {
+    body: JSON.stringify(bodyData),
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+  };
+  console.log(options);
+
+  // Hae data
+  const response = await fetchData(url, options);
+
+  if (response.error) {
+    console.error('Error loginning in:', response.error);
+    return;
+  }
+  if (response.token && response.user) {
+    console.log('Kirjautuminen onnistui! Token:', response.token);
+    localStorage.setItem('token', response.token); // ✅ Tallennetaan token
+    localStorage.setItem('user_id', response.user.id); // ✅ Tallennetaan käyttäjän ID
+    localStorage.setItem('nimi', response.user.username);
+    location.href = './userfrontpage.html'; // ✅ Ohjataan käyttäjän etusivulle
+} else {
+    console.error('Virhe: Tokenia tai käyttäjä-ID:tä ei palautettu.');
+}
+
+  if (response.message) {
+    console.log(response.message, 'success');
+  }
+
+  console.log(response);
+  loginForm.reset(); // tyhjennetään formi
+};
 
   const checkuser = async (event) => {
     event.preventDefault();
@@ -137,17 +139,21 @@ const loginUser = async (event) => {
     if (response.message) {
         console.log(response.message, 'success');
         localStorage.setItem('token', response.token);
+      
+
     }
   
     console.log(response);
     loginForm.reset(); // tyhjennetään formi
   };
 
-const registerForm = document.querySelector('.registerForm');
-registerForm.addEventListener('submit', registerUser);
+  document.addEventListener('DOMContentLoaded', () => {
+    const registerForm = document.querySelector('.registerForm');
+    if (registerForm) registerForm.addEventListener('submit', registerUser);
 
-const loginForm = document.querySelector('.loginForm');
-loginForm.addEventListener('submit', loginUser);
+    const loginForm = document.querySelector('.loginForm');
+    if (loginForm) loginForm.addEventListener('submit', loginUser);
 
-const meRequest = document.querySelector('#meRequest');
-meRequest.addEventListener('click', checkuser);
+    const meRequest = document.querySelector('#meRequest');
+    if (meRequest) meRequest.addEventListener('click', checkuser);
+});

@@ -1,0 +1,18 @@
+import"./style-SDVZoXYC.js";import{f as m}from"./fetch-Bt5pIeqq.js";document.getElementById("snackbar");const i=async()=>{const t=await m("http://localhost:5000/api/users");if(t.error){console.log("Virhe fetch-haussa");return}console.log(t);const o=document.querySelector(".tbody");o.innerHTML="",t.forEach(e=>{const r=document.createElement("tr");r.innerHTML=`
+            <td>${e.username}</td>
+            <td>${e.email}</td>
+            <td><button class="check" data-id="${e.user_id}">Info</button></td>
+            <td><button class="del" data-id="${e.user_id}">Delete</button></td>
+            <td>${e.user_id}</td>
+        `,o.appendChild(r)}),g()};i();const c=async n=>{n.preventDefault();const t=document.querySelector("#username").value.trim(),o=document.querySelector("#password").value.trim(),e=document.querySelector("#email").value.trim();if(!t||!o||!e){alert("Täytä kaikki kentät!");return}const r={username:t,password:o,email:e},a="http://localhost:5000/api/users",d={method:"POST",headers:{"Content-type":"application/json"},body:JSON.stringify(r)};try{const s=await fetch(a,d),u=await s.json();s.ok?(alert("Käyttäjä lisätty onnistuneesti!"),document.querySelector(".addform").reset(),i()):alert(`Virhe: ${u.message||"Tuntematon virhe"}`)}catch(s){console.error("Virhe käyttäjän lisäyksessä:",s),alert("Jotain meni pieleen!")}};document.querySelector(".formpost").addEventListener("submit",c);const l=document.querySelector(".info_dialog"),y=document.querySelector(".info_dialog button");y.addEventListener("click",()=>{l.close()});const p=async n=>{try{const t=await fetch(`http://localhost:5000/api/users/${n}`);if(!t.ok)throw new Error("Käyttäjän tietojen haku epäonnistui");return await t.json()}catch(t){return console.error("Virhe käyttäjän tietojen haussa:",t),null}},g=()=>{document.querySelectorAll(".check").forEach(n=>{n.addEventListener("click",async t=>{console.log("Klikkasit nappulaa:",t.target);const o=t.target.dataset.id;console.log("Haetaan tietoja käyttäjälle id:llä:",o);const e=await p(o);e&&(document.querySelector("#dialog-user-id").textContent=e.user_id,document.querySelector("#dialog-username").textContent=e.username,document.querySelector("#dialog-email").textContent=e.email,document.querySelector("#dialog-role").textContent=e.user_level,l.showModal(),h(e.user_id))})})},h=async n=>{try{let o=await(await fetch(`http://localhost:5000/api/entries/${n}`)).json();console.log("Haetut merkinnät:",o),Array.isArray(o)||(console.warn("Palautettu data ei ollut taulukko, muutetaan se taulukoksi."),o=[o]);const e=document.querySelector(".card-area");e.innerHTML="",o.forEach(r=>{const a=document.createElement("div");a.classList.add("card"),a.innerHTML=`
+                <div class="card-img">
+                    <img src="/img/diary.jpg" alt="Diary Image">
+                </div>
+                <div class="card-diary">
+                    <h4>Päivämäärä: ${new Date(r.entry_date).toLocaleDateString()}</h4>
+                    <p><strong>Mieliala:</strong> ${r.mood}</p>
+                    <p><strong>Paino:</strong> ${r.weight} kg</p>
+                    <p><strong>Uni:</strong> ${r.sleep_hours} tuntia</p>
+                    <p><strong>Muistiinpanot:</strong> ${r.notes}</p>
+                </div>
+            `,e.appendChild(a)})}catch(t){console.error("Virhe päiväkirjamerkintöjen hakemisessa:",t)}};document.querySelector("#app").innerHTML="Moi tässä oman APIn harjoituksia";document.querySelector("#app").innerHTML=`Moi kirjautunut käyttäjä ${localStorage.getItem("nimi")}`;const k=document.querySelector(".get_items");k.addEventListener("click",getItems);const f=document.querySelector(".get_users");f.addEventListener("click",i);const S=document.querySelector(".addform");S.addEventListener("submit",c);

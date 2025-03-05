@@ -1,0 +1,1 @@
+const s=async(t,o={})=>{try{const r=await fetch(t,o);if(!r.ok){const e=await r.text();try{return{error:JSON.parse(e).message||"An error occurred"}}catch{return{error:`Server error: ${e}`}}}return await r.json()}catch(r){return console.error("fetchData() error:",r.message),{error:r.message}}};export{s as f};

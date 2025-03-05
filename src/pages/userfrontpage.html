@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Etusivu</title>
+</head>
+
+<body>
+
+    <nav class="clearfix">
+        <div class="boxi" id="navlogo">HealthApp</div>
+        <div class="boxi" id="about"><a href="../pages/userinfo.html">Omat tiedot</a></div>
+        <div class="boxi" id="login"><a href="../pages/frontpage.html">Kirjaudu ulos</a></div>
+    </nav>
+
+    <main>
+        <h1 id="welcome-message">Hei, </h1>  <!-- Käyttäjän nimi lisätään JavaScriptillä -->
+
+    <div class="container">
+        <div class="box content-box" id="diary">
+            <h2>Päiväkirjamerkinnät</h2>
+            <div class="content" id="diary-entries">Ladataan...</div>
+            <button onclick="addEntry()">Lisää merkintä</button>
+            <button onclick="viewEntries()">Tarkastele merkintöjä</button>
+        </div>
+
+        <div class="box content-box" id="health">
+            <h2>Terveystiedot</h2>
+            <div class="content" id="health-data">Ladataan...</div>
+            <button onclick="addHealthData()">Lisää merkintä</button>
+            <button onclick="viewHealthData()">Tarkastele merkintöjä</button>
+        </div>
+
+        <div class="box content-box" id="activities">
+            <h2>Aktiviteetit</h2>
+            <div class="content" id="activity-data">Ladataan...</div>
+            <button onclick="addActivity()">Lisää merkintä</button>
+            <button onclick="viewActivities()">Tarkastele merkintöjä</button>
+        </div>
+    </div>
+    </main>
+
+    <footer>Copyright, Meitsi</footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/user.js"></script>
+    <script src="../js/mainpage.js"></script>
+
+</body>
+</html>

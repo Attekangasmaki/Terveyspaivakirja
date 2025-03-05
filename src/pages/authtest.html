@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -9,26 +9,7 @@
 
   <body>
 
-    <h3>REGISTER</h3>
-
-    <p>
-      Lisää käyttäjiä formin avulla. Formi lisää uuden käyttäjän
-      nappulasta 'Add User'.
-    </p>
-
-    <!-- https://www.w3schools.com/css/css_form.asp -->
-    <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_form_padding -->
-
-    <pre style="overflow: auto">
-    POST http://localhost:3000/api/users
-    content-type: application/json
-
-    {
-      "username": "Uusi käyttäjä",
-      "password": "salakala",
-      "email": "newuser@example.com"
-    }
-    </pre>
+    <h3>Register</h3>
 
     <form class="registerForm">
       <label for="username">Username</label>
@@ -37,6 +18,7 @@
         type="text"
         name="username"
         placeholder="Uusi käyttäjä"
+        required
       />
       <label for="password">Password</label>
       <input
@@ -44,6 +26,7 @@
         type="password"
         name="password"
         placeholder="salakala"
+        pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
       />
       <label for="password">Email</label>
       <input
@@ -51,6 +34,7 @@
         type="email"
         name="email"
         placeholder="newuser@example.com"
+        required
       />
       <input
         name="submit"
@@ -62,16 +46,7 @@
   </div>
 
     <h3>LOGIN</h3>
-    <pre><code>
-      # Login
-      POST http://localhost:3000/api/auth/login
-      content-type: application/json
-
-      {
-        "username": "user",
-        "password": "secret"
-      }
-      </code></pre>
+   
     <div>
       <form class="loginForm">
         <label for="username">Username</label>
@@ -86,7 +61,7 @@
         <input
           name="submit"
           type="submit"
-          value="Login and get new token"
+          value="Login"
           class="loginform"
         />
       </form>
