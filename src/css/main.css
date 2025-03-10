@@ -2,10 +2,64 @@
 * {
     box-sizing: border-box;
 }
+.wholething {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Keskittää vaaka-suunnassa */
+  justify-content: center; /* Keskittää pysty-suunnassa */
+  min-height: 100vh; /* Asettaa korkeudeksi koko näkymän */
+}
 
-body {
-  margin: 0;
-  
+.analysis {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%; /* Voit säätää leveyttä */
+  min-height: 400px; /* Lisää korkeutta */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Keskittää sisällön pystysuunnassa */
+  align-items: center; /* Keskittää sisällön vaaka-suunnassa */
+  text-align: center;
+}
+
+.grid-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.box1 {
+  flex: 1;
+  background: #e9ecef;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box1 img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dialog-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.dialog-content {
+  text-align: center;
 }
 h1 {
   text-align: center;

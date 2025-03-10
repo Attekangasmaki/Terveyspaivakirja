@@ -1,0 +1,5 @@
+![Etusivu ennen kirjautumista](img/Kayttoliittyma_etusivu.png)
+![Kirjautumissivu](img/Kayttoliittyma_kirjautuminen.png)
+![Rekistöröitymissivu](img/Kayttoliittyma_rekistoroityminen.png)
+![Käyttäjän etusivu](img/Kayttoliittyma_kayttajanetusivu.png)
+![Käyttäjän merkinnät](img/Kayttoliittyma_merkinnat.png)

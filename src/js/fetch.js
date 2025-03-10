@@ -7,24 +7,33 @@
  * @returns {Object} response json data
  */
 const fetchData = async (url, options = {}) => {
-    try {
+  try {
       const response = await fetch(url, options);
-  
+
+      // Tarkistetaan, onko status koodilla 2xx (OK)
       if (!response.ok) {
-        const errorText = await response.text(); 
-        try {
-          const errorData = JSON.parse(errorText); 
-          return { error: errorData.message || "An error occurred" };
-        } catch (jsonError) {
-          return { error: `Server error: ${errorText}` };
-        }
+          // Haetaan virheteksti
+          const errorText = await response.text();
+
+          // Jos virheviesti on pelkkää tekstiä, palautetaan se sellaisenaan
+          return { error: errorText || 'Tuntematon virhe' };
       }
-  
-      return await response.json();
-    } catch (error) {
+
+      // Jos vastaus on ok, palautetaan JSON-muotoinen data
+      try {
+          return await response.json();
+      } catch (jsonError) {
+          // Jos JSON-parse epäonnistuu (esim. tyhjä vastaus tai ei JSON-muotoista dataa)
+          return { error: "Vastaus ei ole kelvollista JSON-muotoa" };
+      }
+  } catch (error) {
       console.error("fetchData() error:", error.message);
+      // Jos tapahtuu virhe pyyntöä tehdessä, palautetaan virhe
       return { error: error.message };
-    }
-  };
+  }
+};
+
+
+
 
   export{fetchData};

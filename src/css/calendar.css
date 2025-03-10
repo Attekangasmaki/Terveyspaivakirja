@@ -1,0 +1,272 @@
+/* Yleinen tyylitys */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Asettaa elementit pystysuunnassa */
+    align-items: center; /* Keskittää sisällön */
+    gap: 20px; /* Lisää väliä elementtien väliin */
+    width: 100%; /* Varmistaa, että käytetään koko leveyttä */
+    max-width: 900px; /* Rajoittaa leveyden */
+    margin: 0 auto; /* Keskittää containerin */
+}
+
+/* Kalenterin sijoittelu */
+#calendar {
+    width: 100%; /* Vie koko tilan */
+    max-width: 900px; /* Maksimileveys */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* SummaryBox (tilastot) */
+.summaryBox {
+    width: 100%; /* Ottaa koko leveyden */
+    max-width: 900px; /* Sama leveys kuin kalenterilla */
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Hover-efekti */
+.summaryBox:hover {
+    background: linear-gradient(135deg, #ffffff, #dcdcdc);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); /* Kevyt nostovaikutus */
+}
+.clearfix {
+    clear: both;
+}
+/* Päivän korostus */
+.fc-day-today {
+    background-color: rgba(255, 193, 7, 0.2) !important;
+    border: 2px solid #ffc107;
+}
+
+/* Otsikot */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Tapahtumatyyppien värikoodaus */
+.fc-event {
+    color: white !important;
+    border: none !important;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Aktiviteetti */
+.fc-event[title^="🏃"] {
+    background-color: #28a745 !important;
+}
+
+/* Verenpaine */
+.fc-event[title^="💓"] {
+    background-color: #dc3545 !important;
+}
+
+/* Mieliala */
+.fc-event[title^="😊"] {
+    background-color: #007bff !important;
+}
+
+/* Merkintä */
+.fc-event[title^="📌"] {
+    background-color: #6c757d !important;
+}
+
+/* Hover-efekti */
+.fc-event:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+/* --- Dialogin tyylit --- */
+
+/* Dialogin ulkoasu */
+#event-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border-radius: 8px;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Dialogin sisällön asettelu */
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dialogin otsikko */
+.dialog-content h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Dialogin teksti */
+.dialog-content p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* Nappien tyyli dialogissa */
+.dialog-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Sulje dialogi */
+#close-button {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Muokkaa ja poista */
+#edit-button {
+    background-color: #ff9800;
+    color: white;
+}
+
+#delete-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Taustan hämärtäminen */
+#event-dialog::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+/* --- Lomakkeen tyylit --- */
+
+/* Taustan hämärtäminen paremmin */
+#add-entry-form-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Tummempi tausta */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Hieman sumennusta taustalle */
+    z-index: 999; /* Varmistetaan, että se on päällimmäisenä */
+}
+
+/* Dialogi-ikkunan muotoilu */
+.dialog-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Lomakkeen kenttien tyyli */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Lähetys- ja peruutusnapit */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+}
+

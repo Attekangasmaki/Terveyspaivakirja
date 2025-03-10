@@ -1,0 +1,18 @@
+
+#charts-container {
+    display: flex; /* Asettaa kuvaajat vierekkäin */
+    flex-wrap: wrap; /* Rivittää, jos tila ei riitä */
+    gap: 20px; /* Välit kuvaajien väliin */
+    justify-content: center; /* Keskittää kuvaajat */
+    margin-bottom: 20px;
+}
+
+.chart-box {
+    width: 40%; /* Tekee laatikoista sopivan kokoisia */
+    min-width: 300px; /* Ei liian pieniä */
+    padding: 10px;
+    border: 1px solid #ddd; /* Kevyt reunus */
+    border-radius: 8px;
+    background: #fff; /* Valkoinen tausta */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Kevyt varjo */
+}
