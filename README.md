@@ -2,9 +2,9 @@
 
 ![Etusivu ennen kirjautumista](img/Kayttoliittyma_etusivu.png)
 ![Kirjautumissivu](img/Kayttoliittyma_kirjautuminen.png)
-![Rekistöröitymissivu](img/Kayttoliittyma_rekistoroityminen.png)
-![Käyttäjän etusivu](img/Kayttoliittyma_kayttajanetusivu.png)
-![Käyttäjän merkinnät](img/Kayttoliittyma_merkinnat.png)
+![Rekistöröitymis](img/kayttoliittyma_rekistoroityminen.png)
+![Käyttäjän etusivu](img/kayttoliittyma_kayttajanetusivu.png)
+![Käyttäjän merkinnät](img/kayttoliittyma_merkinnat.png)
 
 
 #Reitti apidokumentaatioon.
