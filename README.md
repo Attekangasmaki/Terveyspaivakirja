@@ -34,3 +34,5 @@ http://localhost:5000/api/
 -Merkinnän, terveystiedon tai aktiviteetin muokkaaminen ei onnistu.
 -Merkinnän, terveystiedon, aktiviteetin voi lisätä vain "tarkastele merkintöjä"-osiosta, ei suoraan kalenterista.
 
+#Tekoäly
+-Chatgpt:tä käytetty apuna.
