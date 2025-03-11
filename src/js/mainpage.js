@@ -1,11 +1,13 @@
+// Kun DOM on ladattu, suoritetaan seuraavat funktiot
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Sivu ladattu");
-    updateWelcomeMessage();
-    loadDiaryEntries();
-    loadHealthData();
-    loadActivities();
+    updateWelcomeMessage(); // Päivitetään tervetuloteksti
+    loadDiaryEntries(); // Ladataan päiväkirjamerkinnät
+    loadHealthData(); // Ladataan terveystiedot
+    loadActivities(); // Ladataan aktiviteetit
 });
 
+// API:n perusosoite
 const API_BASE = "http://localhost:5000/api";
 
 // 🏷 Päivitä tervetuloteksti käyttäjän nimellä
@@ -21,17 +23,17 @@ function updateWelcomeMessage() {
 
 // 📝 Päiväkirjamerkinnät
 async function loadDiaryEntries() {
-    await loadData("entries", "diary-entries");
+    await loadData("entries", "diary-entries"); // Ladataan päiväkirjamerkinnät
 }
 
 // 📊 Terveystiedot
 async function loadHealthData() {
-    await loadData("metrics", "health-data");
+    await loadData("metrics", "health-data"); // Ladataan terveystiedot
 }
 
 // 🏃 Aktiviteetit
 async function loadActivities() {
-    await loadData("activities", "activity-data");
+    await loadData("activities", "activity-data"); // Ladataan aktiviteetit
 }
 
 // 🔄 Yleisfunktio tietojen lataukseen
@@ -95,30 +97,7 @@ function createEntryHTML(type, entry) {
     `;
 }
 
-// Muokkaa merkintää
-function editEntry(type, entryId) {
-    const token = localStorage.getItem("token");
-    if (!token) {
-        alert("Et ole kirjautunut sisään!");
-        return;
-    }
-
-    fetch(`${API_BASE}/${type}/${entryId}`, {
-        headers: { "Authorization": `Bearer ${token}` }
-    })
-    .then(response => {
-        if (!response.ok) throw new Error(`Virhe haettaessa: ${response.status}`);
-        return response.json();
-    })
-    .then(entry => {
-        showForm(type, entry);
-    })
-    .catch(error => {
-        console.error("Virhe haettaessa merkintää:", error);
-        alert("Merkinnän hakeminen epäonnistui.");
-    });
-};
-
+// Avaa dialogi
 function openDialog(title, content) {
     const dialog = document.getElementById("myDialog");
     document.getElementById("dialog-title").innerText = title;
@@ -126,6 +105,7 @@ function openDialog(title, content) {
     dialog.showModal();
 }
 
+// Sulje dialogi
 function closeDialog() {
     const dialog = document.getElementById("myDialog");
     if (dialog) {
@@ -137,8 +117,7 @@ function closeDialog() {
     }
 }
 
-
-
+// Lisää päiväkirjamerkintä
 function addEntry() {
     const formHtml = `
         <label for="entry_date">Päivämäärä:</label>
@@ -166,6 +145,8 @@ function addEntry() {
     `;
     openDialog("Lisää päiväkirjamerkintä", formHtml);
 }
+
+// Lisää terveystietoja
 function addHealthData() {
     const formHtml = `
         <label for="metric_date">Päivämäärä:</label>
@@ -185,8 +166,7 @@ function addHealthData() {
     openDialog("Lisää terveystietoja", formHtml);
 }
 
-
-// Aktiviteetti - lisää aktiviteetti
+// Lisää aktiviteetti
 function addActivity() {
     const formHtml = `
         <label for="activity_date">Päivämäärä:</label>
@@ -209,7 +189,7 @@ function addActivity() {
     openDialog("Lisää aktiviteetti", formHtml);
 }
 
-// Aktiviteetti - Lähettää tietoja palvelimelle
+// Lähetä aktiviteetti palvelimelle
 function submitActivity() {
     const token = localStorage.getItem("token");
     const userId = localStorage.getItem("user_id");
@@ -254,8 +234,6 @@ function submitActivity() {
         closeDialog();  // Suljetaan lomake virhetilanteessa
     });
 }
-
-
 
 // Lähetä päiväkirjamerkintä
 function submitEntry() {
