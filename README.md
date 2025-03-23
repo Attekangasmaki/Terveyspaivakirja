@@ -1,3 +1,34 @@
+#Tehtävä 1
+Tehtävänä oli asentaa seuraavat työkalut:
+- Robot Framework
+- Browser Library
+- Requests library
+- CryptoLibrary
+- Robotidy
+
+Robot framework asennettiin komennolla:
+"python -m pip install robotframework"
+Asennuksen onnistuminen varmistettiin komennolla:
+"robot --version"
+
+Browser library asennettiin komennolla: 
+"pip install robotframework-browser"
+kirjaston toiminta alustettiin komennolla: 
+"rfbrowser init"
+
+Requests library asennettiin komennolla:
+"pip install robotframework-requests"
+
+CryptoLibrary asennettiin komennolla: 
+"pip install --upgrade robotframework-crypto"
+
+Robotidy asennettiin komennolla: 
+"pip install robotframework-tidy"
+
+Lopuksi asennuksien onnistuminen varmistettiin komennolla:
+"pip freeze"
+
+
 #Kuvat käyttöliittymästä.
 
 ![Etusivu ennen kirjautumista](img/Kayttoliittyma_etusivu.png)
@@ -36,3 +67,34 @@ http://localhost:5000/api/
 
 #Tekoäly
 -Chatgpt:tä käytetty apuna.
+
+
+#Tehtävä 1
+Tehtävänä oli asentaa seuraavat työkalut:
+- Robot Framework
+- Browser Library
+- Requests library
+- CryptoLibrary
+- Robotidy
+
+Robot framework asennettiin komennolla:
+"python -m pip install robotframework"
+Asennuksen onnistuminen varmistettiin komennolla:
+"robot --version"
+
+Browser library asennettiin komennolla: 
+"pip install robotframework-browser"
+kirjaston toiminta alustettiin komennolla: 
+"rfbrowser init"
+
+Requests library asennettiin komennolla:
+"pip install robotframework-requests"
+
+CryptoLibrary asennettiin komennolla: 
+"pip install --upgrade robotframework-crypto"
+
+Robotidy asennettiin komennolla: 
+"pip install robotframework-tidy"
+
+Lopuksi asennuksien onnistuminen varmistettiin komennolla:
+"pip freeze"
