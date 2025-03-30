@@ -1,0 +1,27 @@
+{"level":30,"time":"2025-03-30T07:59:29.358Z","pid":51252,"hostname":"IdeapadAtte","msg":"Listening on 62335"}
+(node:51252) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-03-30T07:59:29.824Z","pid":51252,"hostname":"IdeapadAtte","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-03-30T07:59:30.788Z","pid":51252,"hostname":"IdeapadAtte","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-03-30T07:59:30.789Z","pid":51252,"hostname":"IdeapadAtte","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-03-30T07:59:30.789Z","pid":51252,"hostname":"IdeapadAtte","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-03-30T07:59:30.802Z","pid":51252,"hostname":"IdeapadAtte","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-30T07:59:30.803Z","pid":51252,"hostname":"IdeapadAtte","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-30T07:59:30.833Z","pid":51252,"hostname":"IdeapadAtte","msg":"Changed active context"}
+{"level":30,"time":"2025-03-30T07:59:31.335Z","pid":51252,"hostname":"IdeapadAtte","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-30T07:59:31.336Z","pid":51252,"hostname":"IdeapadAtte","msg":"Changed active page"}
+{"level":30,"time":"2025-03-30T07:59:31.505Z","pid":51252,"hostname":"IdeapadAtte","msg":"End of node method newPage"}
+{"level":30,"time":"2025-03-30T07:59:31.567Z","pid":51252,"hostname":"IdeapadAtte","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-30T07:59:31.568Z","pid":51252,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with [name=\"username\"] in page."}
+{"level":30,"time":"2025-03-30T07:59:32.978Z","pid":51252,"hostname":"IdeapadAtte","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-30T07:59:32.983Z","pid":51252,"hostname":"IdeapadAtte","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-30T07:59:32.983Z","pid":51252,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with [name=\"password\"] in page."}
+{"level":30,"time":"2025-03-30T07:59:33.994Z","pid":51252,"hostname":"IdeapadAtte","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-30T07:59:34.002Z","pid":51252,"hostname":"IdeapadAtte","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-30T07:59:34.002Z","pid":51252,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=.login-button in page."}
+{"level":30,"time":"2025-03-30T07:59:36.071Z","pid":51252,"hostname":"IdeapadAtte","msg":"End of node method click"}
+{"level":30,"time":"2025-03-30T07:59:36.076Z","pid":51252,"hostname":"IdeapadAtte","msg":"Start of node method getText"}
+{"level":30,"time":"2025-03-30T07:59:36.076Z","pid":51252,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with id=loginResponse in page."}
+{"level":30,"time":"2025-03-30T07:59:36.107Z","pid":51252,"hostname":"IdeapadAtte","msg":"Retrieved text for element id=loginResponse containing "}
+{"level":30,"time":"2025-03-30T07:59:36.108Z","pid":51252,"hostname":"IdeapadAtte","msg":"End of node method getText"}
+{"level":30,"time":"2025-03-30T07:59:40.481Z","pid":51252,"hostname":"IdeapadAtte","msg":"Removed page=4abfaec2-d453-4fe6-8ce9-236ee0ebfeab from context=5623f3b0-2323-49b1-8f7f-b994e580a84a page stack"}

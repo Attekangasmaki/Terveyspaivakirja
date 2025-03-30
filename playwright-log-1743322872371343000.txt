@@ -1,0 +1,50 @@
+{"level":30,"time":"2025-03-30T08:21:13.544Z","pid":56024,"hostname":"IdeapadAtte","msg":"Listening on 62596"}
+(node:56024) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-03-30T08:21:14.115Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-03-30T08:21:14.656Z","pid":56024,"hostname":"IdeapadAtte","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-03-30T08:21:14.657Z","pid":56024,"hostname":"IdeapadAtte","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-03-30T08:21:14.657Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-03-30T08:21:14.669Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-30T08:21:14.670Z","pid":56024,"hostname":"IdeapadAtte","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-30T08:21:14.694Z","pid":56024,"hostname":"IdeapadAtte","msg":"Changed active context"}
+{"level":30,"time":"2025-03-30T08:21:14.999Z","pid":56024,"hostname":"IdeapadAtte","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-30T08:21:15.000Z","pid":56024,"hostname":"IdeapadAtte","msg":"Changed active page"}
+{"level":30,"time":"2025-03-30T08:21:15.103Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method newPage"}
+{"level":30,"time":"2025-03-30T08:21:15.111Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-03-30T08:21:15.113Z","pid":56024,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=button[onclick=\"addEntry()\"] in page."}
+{"level":30,"time":"2025-03-30T08:21:15.159Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-03-30T08:21:15.166Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-30T08:21:15.166Z","pid":56024,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=button[onclick=\"addEntry()\"] in page."}
+{"level":30,"time":"2025-03-30T08:21:15.405Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method click"}
+{"level":30,"time":"2025-03-30T08:21:15.412Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-03-30T08:21:15.412Z","pid":56024,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=dialog#myDialog in page."}
+{"level":30,"time":"2025-03-30T08:21:15.420Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-03-30T08:21:15.425Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-03-30T08:21:15.425Z","pid":56024,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=select#mood in page."}
+{"level":30,"time":"2025-03-30T08:21:15.466Z","pid":56024,"hostname":"IdeapadAtte","msg":"Option entries: 5"}
+{"level":30,"time":"2025-03-30T08:21:15.466Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-03-30T08:21:15.466Z","pid":56024,"hostname":"IdeapadAtte","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-03-30T08:21:15.474Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-30T08:21:15.474Z","pid":56024,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=input[type=\"date\"] in page."}
+{"level":30,"time":"2025-03-30T08:21:15.543Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-30T08:21:15.551Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-30T08:21:15.551Z","pid":56024,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=input#weight in page."}
+{"level":30,"time":"2025-03-30T08:21:15.600Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-30T08:21:15.607Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-30T08:21:15.607Z","pid":56024,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=input#sleep_hours in page."}
+{"level":30,"time":"2025-03-30T08:21:15.639Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-30T08:21:15.644Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-30T08:21:15.644Z","pid":56024,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=textarea#notes in page."}
+{"level":30,"time":"2025-03-30T08:21:15.722Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-30T08:21:15.726Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-30T08:21:15.726Z","pid":56024,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=button[onclick=\"submitEntry()\"] in page."}
+{"level":30,"time":"2025-03-30T08:21:15.781Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method click"}
+{"level":30,"time":"2025-03-30T08:21:15.786Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-03-30T08:21:15.786Z","pid":56024,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=#diary-entries in page."}
+{"level":30,"time":"2025-03-30T08:21:15.790Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-03-30T08:21:15.793Z","pid":56024,"hostname":"IdeapadAtte","msg":"Start of node method getText"}
+{"level":30,"time":"2025-03-30T08:21:15.794Z","pid":56024,"hostname":"IdeapadAtte","msg":"Strict mode is enabled, find Locator with css=#diary-entries in page."}
+{"level":30,"time":"2025-03-30T08:21:15.814Z","pid":56024,"hostname":"IdeapadAtte","msg":"Retrieved text for element css=#diary-entries containing Virhe ladattaessa."}
+{"level":30,"time":"2025-03-30T08:21:15.815Z","pid":56024,"hostname":"IdeapadAtte","msg":"End of node method getText"}
+{"level":30,"time":"2025-03-30T08:22:35.375Z","pid":56024,"hostname":"IdeapadAtte","msg":"Removed page=21c1016e-d008-4824-a53e-3f2b67344210 from context=2a56d19b-c546-4011-bd99-72da2206797f page stack"}

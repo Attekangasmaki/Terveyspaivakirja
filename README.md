@@ -1,4 +1,4 @@
-#Tehtävä 1
+# Tehtävä 1
 Tehtävänä oli asentaa seuraavat työkalut:
 - Robot Framework
 - Browser Library
@@ -27,6 +27,29 @@ Robotidy asennettiin komennolla:
 
 Lopuksi asennuksien onnistuminen varmistettiin komennolla:
 "pip freeze"
+
+
+# Tehtävä 2
+
+Sain toimimaan kirjautumisen testauksen.
+![Kirjautumistesti](img/Tehtava2.png)
+
+# Tehtävä 3
+
+Sain testattua. tekstikentän, salasanan, testialueen, pudotusvalikon, checkboxin, radiopainikkeen ja
+päivämäärän valinnan.
+. 
+Datalist dropdownia, file inputtia, värivalitsinta ja liu'utinta en saanut toimimaan.
+
+![Web form](img/Tehtava3.png)
+
+    
+# Tehtävä 4
+
+Päiväkirjamerkinnän lisääminen onnistui.
+
+![Päiväkirjamerkinnän lisääminen.](img/Tehtava4.png)
+
 
 
 #Kuvat käyttöliittymästä.
@@ -69,32 +92,3 @@ http://localhost:5000/api/
 -Chatgpt:tä käytetty apuna.
 
 
-#Tehtävä 1
-Tehtävänä oli asentaa seuraavat työkalut:
-- Robot Framework
-- Browser Library
-- Requests library
-- CryptoLibrary
-- Robotidy
-
-Robot framework asennettiin komennolla:
-"python -m pip install robotframework"
-Asennuksen onnistuminen varmistettiin komennolla:
-"robot --version"
-
-Browser library asennettiin komennolla: 
-"pip install robotframework-browser"
-kirjaston toiminta alustettiin komennolla: 
-"rfbrowser init"
-
-Requests library asennettiin komennolla:
-"pip install robotframework-requests"
-
-CryptoLibrary asennettiin komennolla: 
-"pip install --upgrade robotframework-crypto"
-
-Robotidy asennettiin komennolla: 
-"pip install robotframework-tidy"
-
-Lopuksi asennuksien onnistuminen varmistettiin komennolla:
-"pip freeze"
