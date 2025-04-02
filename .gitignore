@@ -22,5 +22,6 @@ dist-ssr
 *.sln
 *.sw?
 .venv
-
+.env
+load_env.py
 .DS_Store

@@ -1,5 +1,5 @@
-{"level":30,"time":"2025-04-02T12:56:05.159Z","pid":32492,"hostname":"IdeapadAtte","msg":"Listening on 54753"}
-(node:32492) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2025-04-02T13:04:25.911Z","pid":25648,"hostname":"IdeapadAtte","msg":"Listening on 55032"}
+(node:25648) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ================= Original suppressed error =================
 Error: Browser has been closed.
