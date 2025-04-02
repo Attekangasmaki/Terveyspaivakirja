@@ -54,13 +54,13 @@ Päiväkirjamerkinnän lisääminen onnistui.
 
 Kirjautuminen onnistui käyttäjätunnukselle ja salasanalla jotka haettiin .env tiedostosta.
 
-![Kirjautuminen .env tiedoilla.](img/Tehtava5.png)
+![Kirjautuminen .env tiedoilla.](img/tehtava5.png)
 
 # Tehtävä 6
 
 Kirjautuminen onnistui kryptatuilla käyttäjätunnuksella ja salasanalla.
 
-![Kirjautuminen kryptatuilla tiedoilla.](img/Tehtava6.png)
+![Kirjautuminen kryptatuilla tiedoilla.](img/tehtava6.png)
 
 #Kuvat käyttöliittymästä.
 
