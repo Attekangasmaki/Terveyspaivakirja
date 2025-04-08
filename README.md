@@ -67,7 +67,7 @@ Kirjautuminen onnistui kryptatuilla käyttäjätunnuksella ja salasanalla.
 
 # Tehtävä 7
 
-Siirsin log- tiedostot testing- kansioon.
+Siirsin log- tiedostot logs- kansioon.
 
 #Kuvat käyttöliittymästä.
 
