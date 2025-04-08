@@ -89,7 +89,7 @@ Siirsin log- tiedostot outputs- kansioon.
 
 # Tehtävä8
 
-![Linkki report- ja output-tiedostoihin](https://attekangasmaki.github.io/Terveyspaivakirja/outputs/)
+[Linkki report- ja output-tiedostoihin](https://attekangasmaki.github.io/Terveyspaivakirja/outputs/)
 
 
 
