@@ -1,0 +1,6 @@
+[Etusivu](pages/index.html)
+[Kotisivu](src/pages/frontpage.html)
+[Kirjautuminen](src/pages/login.html)
+[Rekisteröinti](src/pages/register.html)
+[Käyttäjän kotisivu](src/pages/userfrontpage.html)
+[Käyttäjän tiedot](src/pages/userinfo.html)

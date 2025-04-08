@@ -1,3 +1,6 @@
+[Kotisivu](index.html)
+[Infosivu](pages/about.html)
+
 # Tehtävä 1
 Tehtävänä oli asentaa seuraavat työkalut:
 - Robot Framework
