@@ -1,7 +1,24 @@
+[Tehtävä 1](#Tehtävä1)
+
+[Tehtävä 2](#Tehtävä2)
+
+[Tehtävä 3](#Tehtävä3)
+
+[Tehtävä 4](#Tehtävä4)
+
+[Tehtävä 5](#Tehtävä5)
+
+[Tehtävä 6](#Tehtävä6)
+
+[Tehtävä 7](#Tehtävä7)
+
+[Tehtävä 8](#Tehtävä8)
+
+
 [Kotisivu](index.html)
 [Infosivu](pages/about.html)
 
-# Tehtävä 1
+# Tehtävä1
 Tehtävänä oli asentaa seuraavat työkalut:
 - Robot Framework
 - Browser Library
@@ -32,12 +49,12 @@ Lopuksi asennuksien onnistuminen varmistettiin komennolla:
 "pip freeze"
 
 
-# Tehtävä 2
+# Tehtävä2
 
 Sain toimimaan kirjautumisen testauksen.
 ![Kirjautumistesti](img/Tehtava2.png)
 
-# Tehtävä 3
+# Tehtävä3
 
 Sain testattua. tekstikentän, salasanan, testialueen, pudotusvalikon, checkboxin, radiopainikkeen ja
 päivämäärän valinnan.
@@ -47,27 +64,34 @@ Datalist dropdownia, file inputtia, värivalitsinta ja liu'utinta en saanut toim
 ![Web form](img/Tehtava3.png)
 
     
-# Tehtävä 4
+# Tehtävä4
 
 Päiväkirjamerkinnän lisääminen onnistui.
 
 ![Päiväkirjamerkinnän lisääminen.](img/Tehtava4.png)
 
-# Tehtävä 5
+# Tehtävä5
 
 Kirjautuminen onnistui käyttäjätunnukselle ja salasanalla jotka haettiin .env tiedostosta.
 
 ![Kirjautuminen .env tiedoilla.](img/tehtava5.png)
 
-# Tehtävä 6
+# Tehtävä6
 
 Kirjautuminen onnistui kryptatuilla käyttäjätunnuksella ja salasanalla.
 
 ![Kirjautuminen kryptatuilla tiedoilla.](img/tehtava6.png)
 
-# Tehtävä 7
+# Tehtävä7
 
 Siirsin log- tiedostot outputs- kansioon.
+
+
+# Tehtävä8
+
+![Linkki report- ja output-tiedostoihin](https://attekangasmaki.github.io/Terveyspaivakirja/outputs/)
+
+
 
 #Kuvat käyttöliittymästä.
 
