@@ -62,6 +62,10 @@ Kirjautuminen onnistui kryptatuilla käyttäjätunnuksella ja salasanalla.
 
 ![Kirjautuminen kryptatuilla tiedoilla.](img/tehtava6.png)
 
+# Tehtävä 7
+
+Siirsin log- tiedostot testing- kansioon.
+
 #Kuvat käyttöliittymästä.
 
 ![Etusivu ennen kirjautumista](img/Kayttoliittyma_etusivu.png)
