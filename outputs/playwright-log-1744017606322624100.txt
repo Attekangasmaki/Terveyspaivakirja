@@ -1,0 +1,51 @@
+{"level":30,"time":"2025-04-07T09:20:09.318Z","pid":23428,"hostname":"IdeapadAtte","msg":"Listening on 64883"}
+(node:23428) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-07T09:20:09.511Z","pid":23428,"hostname":"IdeapadAtte","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-07T09:20:10.142Z","pid":23428,"hostname":"IdeapadAtte","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-07T09:20:10.144Z","pid":23428,"hostname":"IdeapadAtte","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-07T09:20:10.161Z","pid":23428,"hostname":"IdeapadAtte","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-07T09:20:10.144Z","pid":23428,"hostname":"IdeapadAtte","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-07T09:20:10.162Z","pid":23428,"hostname":"IdeapadAtte","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-07T09:20:10.205Z","pid":23428,"hostname":"IdeapadAtte","msg":"Changed active context"}
+{"level":30,"time":"2025-04-07T09:20:10.697Z","pid":23428,"hostname":"IdeapadAtte","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-07T09:20:10.698Z","pid":23428,"hostname":"IdeapadAtte","msg":"Changed active page"}
+{"level":30,"time":"2025-04-07T09:20:11.931Z","pid":23428,"hostname":"IdeapadAtte","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+[2m  - navigating to "http://localhost:5173/src/pages/login.html", waiting until "load"[22m
+
+    at newPage (C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:12567:18)
+    at async PlaywrightServer.newPage (C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-04-07T09:20:12.037Z","pid":23428,"hostname":"IdeapadAtte","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-04-07T09:20:12.039Z","pid":23428,"hostname":"IdeapadAtte","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-04-07T09:20:12.240Z","pid":23428,"hostname":"IdeapadAtte","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-07T09:20:12.242Z","pid":23428,"hostname":"IdeapadAtte","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-07T09:20:12.250Z","pid":23428,"hostname":"IdeapadAtte","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-07T09:20:12.250Z","pid":23428,"hostname":"IdeapadAtte","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-07T09:20:12.259Z","pid":23428,"hostname":"IdeapadAtte","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-07T09:20:12.260Z","pid":23428,"hostname":"IdeapadAtte","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-07T09:20:12.271Z","pid":23428,"hostname":"IdeapadAtte","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-07T09:20:12.271Z","pid":23428,"hostname":"IdeapadAtte","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-07T09:20:12.280Z","pid":23428,"hostname":"IdeapadAtte","msg":"Changed active context"}
+{"level":30,"time":"2025-04-07T09:20:12.285Z","pid":23428,"hostname":"IdeapadAtte","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-04-07T09:20:12.318Z","pid":23428,"hostname":"IdeapadAtte","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-04-07T09:20:13.710Z","pid":23428,"hostname":"IdeapadAtte","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-07T09:20:14.008Z","pid":23428,"hostname":"IdeapadAtte","msg":"End of node method closeAllBrowsers"}

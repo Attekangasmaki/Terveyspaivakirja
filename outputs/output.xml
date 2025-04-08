@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-04-07T12:19:51.781646" rpa="false" schemaversion="5">
+<suite id="s1" name="Testaus-tehtävät" source="C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\Testaus-tehtävät">
+<suite id="s1-s1" name="Tehtava2" source="C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\Testaus-tehtävät\tehtava2.robot">
+<test id="s1-s1-t1" name="Test Login Page" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-07T12:19:52.669759" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\attek\\Web-kehitys\\vk4\\yksilo-projekti\\logs\\browser\\traces\\temp\\183b38eb-4bc3-404d-9405-c11ef54c4d9e"}</msg>
+<msg time="2025-04-07T12:19:52.786244" level="INFO">Starting Browser process C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js using port 64851</msg>
+<msg time="2025-04-07T12:19:52.786878" level="INFO">Node startup parameters: ['node', 'C:\\Users\\attek\\Web-kehitys\\vk4\\yksilo-projekti\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '64851']</msg>
+<msg time="2025-04-07T12:19:56.428239" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\attek\\Web-kehitys\\vk4\\yksilo-projekti\\logs\\browser\\traces\\temp\\183b38eb-4bc3-404d-9405-c11ef54c4d9e"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-07T12:19:52.667320" elapsed="3.761273"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-07T12:19:59.347674" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-07T12:19:59.347891" level="INFO">See also file:///C:/Users/attek/Web-kehitys/vk4/yksilo-projekti/logs/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-07T12:19:59.349110" level="FAIL">Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "http://localhost:5173/src/pages/login.html", waiting until "load"
+</msg>
+<arg>http://localhost:5173/src/pages/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-04-07T12:19:56.429362" elapsed="3.432003">Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "http://localhost:5173/src/pages/login.html", waiting until "load"
+</status>
+</kw>
+<kw name="Get Title" owner="Browser">
+<arg>==</arg>
+<arg>Kirjaudu sisään</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-04-07T12:19:59.861907" elapsed="0.000254"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>[name="username"]</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:19:59.862425" elapsed="0.000301"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>[name="password"]</arg>
+<arg>${Password}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:19:59.863167" elapsed="0.000223"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<arg>css=.login-button</arg>
+<arg>delay=2 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:19:59.863681" elapsed="0.000180"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<arg>id=loginResponse</arg>
+<arg>!=</arg>
+<arg>Virheellinen käyttäjätunnus tai salasana</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:19:59.864109" elapsed="0.000143"/>
+</kw>
+<msg time="2025-04-07T12:19:59.870393" level="INFO">Set timeout to: 10000</msg>
+<status status="FAIL" start="2025-04-07T12:19:52.665630" elapsed="7.198994">Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "http://localhost:5173/src/pages/login.html", waiting until "load"
+</status>
+</test>
+<status status="FAIL" start="2025-04-07T12:19:51.854511" elapsed="8.017696"/>
+</suite>
+<suite id="s1-s2" name="Tehtava3" source="C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\Testaus-tehtävät\tehtava3.robot">
+<test id="s1-s2-t1" name="Test Web Form Elements" line="8">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-07T12:19:59.960077" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\attek\\Web-kehitys\\vk4\\yksilo-projekti\\logs\\browser\\traces\\temp\\84cdd19d-2528-454e-9600-692dbf000d2e"}</msg>
+<msg time="2025-04-07T12:20:00.004227" level="INFO">Starting Browser process C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js using port 64864</msg>
+<msg time="2025-04-07T12:20:00.004364" level="INFO">Node startup parameters: ['node', 'C:\\Users\\attek\\Web-kehitys\\vk4\\yksilo-projekti\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '64864']</msg>
+<msg time="2025-04-07T12:20:02.125792" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\attek\\Web-kehitys\\vk4\\yksilo-projekti\\logs\\browser\\traces\\temp\\84cdd19d-2528-454e-9600-692dbf000d2e"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-07T12:19:59.958903" elapsed="2.167614"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-07T12:20:04.288645" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-07T12:20:04.288841" level="INFO">See also file:///C:/Users/attek/Web-kehitys/vk4/yksilo-projekti/logs/playwright-log-1744017599883603900.txt for additional details.</msg>
+<msg time="2025-04-07T12:20:04.289072" level="FAIL">Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.selenium.dev/selenium/web/web-form.html", waiting until "load"
+</msg>
+<arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-04-07T12:20:02.128434" elapsed="2.165259">Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.selenium.dev/selenium/web/web-form.html", waiting until "load"
+</status>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>css=form</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.294786" elapsed="0.000366"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>css=input[name="my-text"]</arg>
+<arg>Esimerkki tekstiä</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.295857" elapsed="0.000333"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>css=input[name="my-password"]</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.297216" elapsed="0.000336"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>css=textarea[name="my-textarea"]</arg>
+<arg>Tämä on esimerkkiviesti.</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.298208" elapsed="0.000333"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<arg>css=select[name="my-select"]</arg>
+<arg>label</arg>
+<arg>Two</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.299178" elapsed="0.000342"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>css=ul#my-datalist option</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.300060" elapsed="0.000225"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>css=input[list="my-datalist"]</arg>
+<arg>San Francisco</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.300805" elapsed="0.000279"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>css=ul#my-datalist option[value="San Francisco"]</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.302087" elapsed="0.000352"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>css=input[list="my-datalist"]</arg>
+<arg>ARROW_DOWN</arg>
+<arg>ENTER</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.303077" elapsed="0.000451"/>
+</kw>
+<kw name="Set File Input">
+<arg>css=input[type="file"]</arg>
+<arg>C:\\Users\\attek\\Web-kehitys\\vk4\\yksilo-projekti\\Testaus-tehtävät/testfile.txt</arg>
+<status status="NOT RUN" start="2025-04-07T12:20:04.304589" elapsed="0.000408"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=input[name="my-checkbox"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.305614" elapsed="0.000287"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=input[id="my-check-2"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.306358" elapsed="0.000449"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=input[name="my-radio"][value="option2"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.307515" elapsed="0.000482"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>css=input[type="color"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.308715" elapsed="0.000414"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>css=input[type="date"]</arg>
+<arg>2024-12-31</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.309987" elapsed="0.000665"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>css=input[type="date"]</arg>
+<arg>ENTER</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.313085" elapsed="0.000482"/>
+</kw>
+<kw name="Execute Javascript">
+<arg>document.querySelector('input[type="range"]').value = 100</arg>
+<status status="NOT RUN" start="2025-04-07T12:20:04.314748" elapsed="0.000843"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.316451" elapsed="0.000524"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>id=message</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.317535" elapsed="0.000476"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<var>${message_text}</var>
+<arg>id=message</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.318597" elapsed="0.000303"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${message_text}</arg>
+<arg>Received!</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.319307" elapsed="0.000261"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:04.319969" elapsed="0.000184"/>
+</kw>
+<msg time="2025-04-07T12:20:04.330169" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-04-07T12:20:04.349993" level="INFO">Switching context to context=8e22e2b7-0d9a-4cec-b95b-2a4a7e25dd64 in CURRENT</msg>
+<msg time="2025-04-07T12:20:04.363462" level="INFO">Successfully changed active context: context=8e22e2b7-0d9a-4cec-b95b-2a4a7e25dd64</msg>
+<msg time="2025-04-07T12:20:04.407731" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-04-07T12:19:59.957848" elapsed="4.362730">Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.selenium.dev/selenium/web/web-form.html", waiting until "load"
+</status>
+</test>
+<status status="FAIL" start="2025-04-07T12:19:59.879322" elapsed="4.532210"/>
+</suite>
+<suite id="s1-s3" name="Tehtava4" source="C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\Testaus-tehtävät\tehtava4.robot">
+<test id="s1-s3-t1" name="Add Diary Entry" line="16">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-07T12:20:04.434446" level="INFO">Switching browser to browser=ab5f3992-582a-4ba3-b44d-1f144db91203</msg>
+<msg time="2025-04-07T12:20:04.439248" level="INFO">Successfully changed active browser: browser=ab5f3992-582a-4ba3-b44d-1f144db91203</msg>
+<msg time="2025-04-07T12:20:04.439558" level="INFO">Reusing existing browser with id: browser=ab5f3992-582a-4ba3-b44d-1f144db91203</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-07T12:20:04.433062" elapsed="0.006849"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-07T12:20:06.070112" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-07T12:20:06.070299" level="INFO">See also file:///C:/Users/attek/Web-kehitys/vk4/yksilo-projekti/logs/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-07T12:20:06.070536" level="FAIL">Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "http://localhost:5173/src/pages/userinfo.html", waiting until "load"
+</msg>
+<arg>${USERINFO_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-04-07T12:20:04.440691" elapsed="1.636923">Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "http://localhost:5173/src/pages/userinfo.html", waiting until "load"
+</status>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>css=button[onclick="addEntry()"]</arg>
+<arg>visible</arg>
+<arg>timeout=15s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.079662" elapsed="0.000480"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=button[onclick="addEntry()"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.081115" elapsed="0.000332"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>css=dialog#myDialog</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.082028" elapsed="0.000376"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<arg>css=select#mood</arg>
+<arg>value</arg>
+<arg>ilo</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.083007" elapsed="0.000303"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>css=input[type="date"]</arg>
+<arg>${DIARY_ENTRY['date']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.083889" elapsed="0.000343"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>css=input#weight</arg>
+<arg>${DIARY_ENTRY['weight']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.084855" elapsed="0.000419"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>css=input#sleep_hours</arg>
+<arg>${DIARY_ENTRY['sleep_hours']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.085956" elapsed="0.000380"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>css=textarea#notes</arg>
+<arg>${DIARY_ENTRY['notes']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.087219" elapsed="0.000327"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=button[onclick="submitEntry()"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.088175" elapsed="0.000291"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.089041" elapsed="0.000312"/>
+</kw>
+<msg time="2025-04-07T12:20:06.098895" level="INFO">Set timeout to: 10000</msg>
+<status status="FAIL" start="2025-04-07T12:20:04.432142" elapsed="1.657961">Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "http://localhost:5173/src/pages/userinfo.html", waiting until "load"
+</status>
+</test>
+<status status="FAIL" start="2025-04-07T12:20:04.421698" elapsed="1.679348"/>
+</suite>
+<suite id="s1-s4" name="Tehtava5" source="C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\Testaus-tehtävät\tehtava5.robot">
+<test id="s1-s4-t1" name="Test Login Page" line="11">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-07T12:20:06.246994" level="INFO">${Username} = attek</msg>
+<var>${Username}</var>
+<arg>%{USERNAME}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-07T12:20:06.245715" elapsed="0.001401"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-07T12:20:06.250091" level="FAIL">Environment variable '%{PASSWORD}' not found.</msg>
+<var>${Password}</var>
+<arg>%{PASSWORD}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="FAIL" start="2025-04-07T12:20:06.247840" elapsed="0.002470">Environment variable '%{PASSWORD}' not found.</status>
+</kw>
+<kw name="New Browser" owner="Browser">
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.251199" elapsed="0.000399"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<arg>http://localhost:5173/src/pages/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.252343" elapsed="0.000777"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<arg>==</arg>
+<arg>Kirjaudu sisään</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.254670" elapsed="0.000589"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>[name="username"]</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.258471" elapsed="0.000591"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>[name="password"]</arg>
+<arg>${Password}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.271762" elapsed="0.001051"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<arg>css=.login-button</arg>
+<arg>delay=2 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.284866" elapsed="0.000805"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<arg>id=loginResponse</arg>
+<arg>!=</arg>
+<arg>Virheellinen käyttäjätunnus tai salasana</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:06.288422" elapsed="0.000330"/>
+</kw>
+<msg time="2025-04-07T12:20:06.304243" level="INFO">Set timeout to: 10000</msg>
+<status status="FAIL" start="2025-04-07T12:20:06.243607" elapsed="0.046227">Environment variable '%{PASSWORD}' not found.</status>
+</test>
+<status status="FAIL" start="2025-04-07T12:20:06.110220" elapsed="0.196541"/>
+</suite>
+<suite id="s1-s5" name="Tehtava6" source="C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\Testaus-tehtävät\tehtava6.robot">
+<test id="s1-s5-t1" name="Test Login Page" line="10">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-07T12:20:07.875652" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\attek\\Web-kehitys\\vk4\\yksilo-projekti\\logs\\browser\\traces\\temp\\8cc4d7f2-afb8-4938-8233-c07eba898a9f"}</msg>
+<msg time="2025-04-07T12:20:07.943073" level="INFO">Starting Browser process C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js using port 64883</msg>
+<msg time="2025-04-07T12:20:07.943404" level="INFO">Node startup parameters: ['node', 'C:\\Users\\attek\\Web-kehitys\\vk4\\yksilo-projekti\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '64883']</msg>
+<msg time="2025-04-07T12:20:10.152272" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\attek\\Web-kehitys\\vk4\\yksilo-projekti\\logs\\browser\\traces\\temp\\8cc4d7f2-afb8-4938-8233-c07eba898a9f"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-07T12:20:07.873605" elapsed="2.279119"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-07T12:20:12.177338" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-07T12:20:12.177601" level="INFO">See also file:///C:/Users/attek/Web-kehitys/vk4/yksilo-projekti/logs/playwright-log-1744017606322624100.txt for additional details.</msg>
+<msg time="2025-04-07T12:20:12.178052" level="FAIL">Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "http://localhost:5173/src/pages/login.html", waiting until "load"
+</msg>
+<arg>http://localhost:5173/src/pages/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-04-07T12:20:10.157440" elapsed="2.025475">Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "http://localhost:5173/src/pages/login.html", waiting until "load"
+</status>
+</kw>
+<kw name="Get Title" owner="Browser">
+<arg>==</arg>
+<arg>Kirjaudu sisään</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:12.185459" elapsed="0.000422"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>[name="username"]</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:12.190808" elapsed="0.000410"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>[name="password"]</arg>
+<arg>${Password}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:12.191854" elapsed="0.000407"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<arg>css=.login-button</arg>
+<arg>delay=2 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:12.205043" elapsed="0.000566"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<arg>id=loginResponse</arg>
+<arg>!=</arg>
+<arg>Virheellinen käyttäjätunnus tai salasana</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T12:20:12.213721" elapsed="0.000471"/>
+</kw>
+<msg time="2025-04-07T12:20:12.225530" level="INFO">Set timeout to: 10000</msg>
+<status status="FAIL" start="2025-04-07T12:20:07.870078" elapsed="4.345755">Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "http://localhost:5173/src/pages/login.html", waiting until "load"
+</status>
+</test>
+<status status="FAIL" start="2025-04-07T12:20:06.317808" elapsed="5.913672"/>
+</suite>
+<status status="FAIL" start="2025-04-07T12:19:51.785853" elapsed="20.541567"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testaus-tehtävät" id="s1" pass="0" fail="5" skip="0">Testaus-tehtävät</stat>
+<stat name="Tehtava2" id="s1-s1" pass="0" fail="1" skip="0">Testaus-tehtävät.Tehtava2</stat>
+<stat name="Tehtava3" id="s1-s2" pass="0" fail="1" skip="0">Testaus-tehtävät.Tehtava3</stat>
+<stat name="Tehtava4" id="s1-s3" pass="0" fail="1" skip="0">Testaus-tehtävät.Tehtava4</stat>
+<stat name="Tehtava5" id="s1-s4" pass="0" fail="1" skip="0">Testaus-tehtävät.Tehtava5</stat>
+<stat name="Tehtava6" id="s1-s5" pass="0" fail="1" skip="0">Testaus-tehtävät.Tehtava6</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-07T12:19:52.663036" level="ERROR">Error in file 'C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\Testaus-tehtävät\tehtava2.robot' on line 3: Resource file 'Keywords.robot' does not exist.</msg>
+<msg time="2025-04-07T12:20:06.235168" level="ERROR">Error in file 'C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\Testaus-tehtävät\tehtava5.robot' on line 6: Resource file 'Keywords.robot' does not exist.</msg>
+<msg time="2025-04-07T12:20:06.239176" level="ERROR">Error in file 'C:\Users\attek\Web-kehitys\vk4\yksilo-projekti\Testaus-tehtävät\tehtava5.robot' on line 8: Variable file 'load_env.py' does not exist.</msg>
+</errors>
+</robot>
